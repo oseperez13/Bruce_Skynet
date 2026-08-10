@@ -35,7 +35,7 @@ jobs:
 
       - name: Build SKYNET GPS Bridge
         working-directory: SKYNET_GPS_Bridge_Android
-        run: gradle :app:assembleDebug --no-daemon
+        run: gradle :app:assembleDebug --no-daemon -Pandroid.useAndroidX=true -Pandroid.enableJetifier=true
 
       - name: Rename APK
         run: |
