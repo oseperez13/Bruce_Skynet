@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.SkynetGps" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#00DCFF</item>
+        <item name="colorPrimaryVariant">#00A9C7</item>
+        <item name="colorSecondary">#44FF9A</item>
+        <item name="android:windowBackground">#04080E</item>
+        <item name="android:statusBarColor">#04080E</item>
+        <item name="android:navigationBarColor">#04080E</item>
+    </style>
+</resources>
