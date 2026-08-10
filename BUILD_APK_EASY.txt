@@ -1,0 +1,37 @@
+SKYNET GPS BRIDGE v2 - EASIEST APK BUILD
+===========================================
+
+This package includes a GitHub Actions workflow that builds the Android APK
+for you in GitHub's cloud. You do NOT need Android Studio.
+
+1. Create a new PRIVATE GitHub repository.
+2. Upload the CONTENTS of this ZIP to the repository.
+   Important: keep the .github/workflows/build-apk.yml folder structure.
+3. Open the repository's "Actions" tab.
+4. Select "Build SKYNET GPS Bridge APK".
+5. Click "Run workflow".
+6. When it finishes, open the completed workflow run.
+7. Under "Artifacts", download:
+      SKYNET_GPS_Bridge_v2_APK
+8. Unzip that artifact. Inside is:
+      SKYNET_GPS_Bridge_v2.apk
+9. Copy the APK to your Android phone and tap it.
+10. Allow "Install unknown apps" for the app/file manager Android asks about.
+11. Install.
+12. Grant precise location permission.
+13. Enable your phone hotspot.
+14. Open SKYNET GPS Bridge and press START GPS BRIDGE.
+
+Then edit SKYNET_Wardrive_v2.js with:
+- phone hotspot SSID
+- phone hotspot password
+- the endpoint displayed by the Android app
+
+Copy SKYNET_Wardrive_v2.js to Bruce /scripts and launch it.
+
+WHY THERE IS NO APK ALREADY IN THIS ZIP
+---------------------------------------
+The current ChatGPT execution runtime does not contain the Android SDK or
+Gradle build toolchain, and its environment blocks downloading the required
+binary SDK archives. The Android source is complete, and this GitHub workflow
+performs the actual Android build using GitHub's Android-capable runner.
